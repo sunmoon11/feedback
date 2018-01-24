@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title>Send Feedback App</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet">
+
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+        <script src="https://use.fontawesome.com/be65aac55a.js"></script>
+        <style>
+            body {
+                background-color: #761D5E;
+            }
+
+            .source_other, .advertiser {
+            	display: none;
+            }
+        </style>
+    </head>
+    <body>
+        {% block content %}
+
+        {% endblock %}
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+        <script src="/static/js/auth.js"></script>
+        {% block extra_js %}{% endblock %}
+	</body>
+</html>
+

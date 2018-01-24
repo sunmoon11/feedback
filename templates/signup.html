@@ -1,0 +1,40 @@
+{% extends "base_auth.html" %}
+
+{% block content %}
+    <div class="container">
+        <div class="row auth">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div class="card card-outline-secondary  id-input-wrapper">
+                    <div class="card-header text-center">
+                        Sign up
+                    </div>
+                    <div class="card-body">
+                        <form action="" method="post" class="signup-form register-form">
+                            {% csrf_token %}
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <input type="text" name="username" class="form-control input-lg" placeholder="Name...">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" name="password" class="password form-control input-lg" placeholder="Password...">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" name="password_repeat" class="form-control input-lg" placeholder="Password confirm...">
+                                    </div>
+                                    <button type="submit" class="btn-pay btn-block">Register</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card-footer">
+                        <div class="col-md-6 pull-left text-left">
+                            <a class="signin" href="/signin">Sign in</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
